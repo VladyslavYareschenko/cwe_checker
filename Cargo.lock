@@ -3,13 +3,6 @@
 version = 3
 
 [[package]]
-name = "acceptance_tests_ghidra"
-version = "0.1.0"
-dependencies = [
- "colored",
-]
-
-[[package]]
 name = "aho-corasick"
 version = "0.7.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -102,17 +95,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "colored"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b3616f750b84d8f0de8a58bda93e08e2a81ad3f523089b05f1dffecab48c6cbd"
-dependencies = [
- "atty",
- "lazy_static",
- "winapi",
-]
-
-[[package]]
 name = "convert_case"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -140,19 +122,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "cwe_checker"
-version = "0.6.0-dev"
-dependencies = [
- "cwe_checker_lib",
- "directories",
- "nix",
- "serde_json",
- "structopt",
-]
-
-[[package]]
 name = "cwe_checker_lib"
-version = "0.6.0-dev"
+version = "0.1.0"
 dependencies = [
  "anyhow",
  "apint",
@@ -162,12 +133,13 @@ dependencies = [
  "fnv",
  "gcd",
  "goblin",
- "itertools",
+ "nix",
  "petgraph",
  "regex",
  "serde",
  "serde_json",
  "serde_yaml",
+ "structopt",
 ]
 
 [[package]]
@@ -208,12 +180,6 @@ name = "dtoa"
 version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "56899898ce76aaf4a0f24d914c97ea6ed976d42fec6ad33fcbb0a1103e07b2b0"
-
-[[package]]
-name = "either"
-version = "1.6.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e78d4f1cc4ae33bbfc157ed5d5a5ef3bc29227303d595861deb238fcec4e9457"
 
 [[package]]
 name = "fixedbitset"
@@ -293,15 +259,6 @@ checksum = "bc633605454125dec4b66843673f01c7df2b89479b32e0ed634e43a91cff62a5"
 dependencies = [
  "autocfg",
  "hashbrown",
-]
-
-[[package]]
-name = "itertools"
-version = "0.10.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "69ddb889f9d0d08a67338271fa9b62996bc788c7796a5c18cf057420aaed5eaf"
-dependencies = [
- "either",
 ]
 
 [[package]]
